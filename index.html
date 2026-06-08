@@ -20,23 +20,47 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
+                display: flex;
             }
             img{
                 width: 80px;
                 height: 80px;
             }
+            .artigo-autor {
+                font-weight: bold;
+            }
+
         </style>
     </head>
     <body>
         <header> 
-            <h1>barbie</h1>
+            <h1>blog da barbie</h1>
             <p>vou contar os acontecimentos da vida da barbie</p>
         </header>
         <main>
         <img src="barbie.png" alt="Logotipo oficial da Barbie em letras cursivas cor-de-rosa com borda branca">
+        <div>
             <h2>curiosidades sobre a vida da barbie</h2>
-            <p>por: nathália martello dola</p>
+            <p class="artigo-autor">por: nathália martello dola</p>
             <p>bem vindos ao blog da barbie, aqui vou contar o que aconteceu na vida dela.</p>
+            <button>💗 <span>0</span></button>
+            <button>👎 <span>0</span></button>
+        </div>
+           
         </main>
     </body>
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", botaoclicado);
+        function botaoclicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;          
+        }
+    })
+
+
+    </script>
 </html>
