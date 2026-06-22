@@ -5,37 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blog da barbie</title>
-    <style>
-        header {
-            background-color: #F934B8;
-            color: #ffffff;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-            border: 5px solid #982670;
-        }
-
-        main {
-            background-color: #ffffff;
-            color: #F934B8;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-        }
-        article{
-            display: flex;
-        }
-
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -57,6 +27,42 @@
         <article>
             <img src="barbie.png" alt="Logotipo oficial da Barbie em letras cursivas cor-de-rosa com borda branca">
             <div>
+                <h2>copa do mundo 2026</h2>
+                <p class="artigo-autor">por: nathália martello dola</p>
+                <p>tudo o que aconteceu até agora na copa do mundo</p>
+                <button>💗 <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="barbie.png" alt="Logotipo oficial da Barbie em letras cursivas cor-de-rosa com borda branca">
+            <div>
+                <h2>liga das nações de voleibol</h2>
+                <p class="artigo-autor">por: nathália martello dola</p>
+                <p>todos os times que estão jogando na VNL</p>
+                <button>💗 <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="barbie.png" alt="Logotipo oficial da Barbie em letras cursivas cor-de-rosa com borda branca">
+            <div>
+                <h2>aqui no blog da barbie vou contar o que a barbie faz no seu dia a dia</h2>
+                <p class="artigo-autor">por: nathália martello dola</p>
+                <p>aqui vou contar o que a barbie faz no seu dia a dia</p>
+                <button>💗 <span>0</span></button>
+                <button>👎 <span>0</span></button>
+            </div>
+        </article>
+
+
+        <article>
+            <img src="barbie.png" alt="Logotipo oficial da Barbie em letras cursivas cor-de-rosa com borda branca">
+            <div>
                 <h2>aqui no blog da barbie vou contar o que a barbie faz no seu dia a dia</h2>
                 <p class="artigo-autor">por: nathália martello dola</p>
                 <p>aqui vou contar o que a barbie faz no seu dia a dia</p>
@@ -65,27 +71,9 @@
             </div>
         </article>
     </main>
+
+    <script src="script.js"></script>
 </body>
-<script>
-    const botoes = document.querySelectorAll("button");
 
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botaoclicado);
-        function botaoclicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false){
-                texto.textContent++;
-                curtiu = true;
-            } else{
-                texto.textContent--;
-                curtiu = false;
-            }
-        }
-    })
-
-
-</script>
 
 </html>
