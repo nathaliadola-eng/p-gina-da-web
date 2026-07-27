@@ -3,17 +3,17 @@ body{
 }
 
 header {
-    background-color: #ff00aa;
+    background-color: #b000d3;
     color: #ffffff;
     text-align: center;
     margin: 0 auto;
     padding: 16px;
-    border: 5px solid #d72097;
+    border: 5px solid #8c00b6;
 }
 
 main {
     background-color: #ffffff;
-    color: #dc0092;
+    color: #8a34b3;
     margin: 0 auto;
     padding: 16px;
 
@@ -23,7 +23,7 @@ main {
 article{
     display: flex;
 
-    border: 1px solid #ff00a64c;
+    border: 1px solid #45005c;
 
     margin: 10px;
     gap: 10px;
