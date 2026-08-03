@@ -1,29 +1,38 @@
+:root{
+    --cor-primária:#b000d3;
+    --cor-secundária:#c554e8;
+    --cor-fundo:#ffffff;
+    --cor-texto:#720097;
+    --cor-contraste:#f9f9f9;
+    --cor-contraste:#ffffff;
+    --cor-botao:#eaeaea;
+}
+
+
 body{
     max-width: 100vw;
 }
 
 header {
-    background-color: #b000d3;
-    color: #ffffff;
+    background-color: var(--cor-primária);
+    color: var(--cor-contraste);
     text-align: center;
     margin: 0 auto;
     padding: 16px;
-    border: 5px solid #8c00b6;
 }
 
 main {
-    background-color: #ffffff;
-    color: #8a34b3;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     margin: 0 auto;
     padding: 16px;
-
     display:flex;
     flex-wrap: wrap;
 }
 article{
     display: flex;
 
-    border: 1px solid #45005c;
+    border: 1px solid var(--cor-primária);
 
     margin: 10px;
     gap: 10px;
